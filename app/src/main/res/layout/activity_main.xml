@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/menu">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_button"
+            android:id="@+id/settingMainButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/classicPlayButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/classic_button"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/customPlayButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_button"
+            android:layout_below="@id/classicPlayButton"
+            android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:id="@+id/levelLayout"
+                android:layout_width="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/customPlayButton"
+                android:layout_height="85dp"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/minusButton"
+                    android:layout_width="50dp"
+                    android:text="-"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:textSize="20dp"
+                    android:background="@drawable/levelblue_button"
+                    android:layout_height="54dp" />
+
+                <TextView
+                    android:id="@+id/levelTextView"
+                    android:layout_width="80dp"
+                    android:text="4"
+                    android:textColor="@color/yellow"
+                    android:background="@drawable/middle_hex"
+                    android:gravity="center"
+                    android:textSize="50dp"
+                    android:fontFamily="@font/old_london"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/plusButton"
+                    android:layout_width="50dp"
+                    android:text="+"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:textSize="20dp"
+                    android:background="@drawable/level_button"
+                    android:layout_height="54dp" />
+            </LinearLayout>
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/levelLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/fight_button"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

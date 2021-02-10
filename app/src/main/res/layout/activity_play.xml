@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity"
+    android:background="@drawable/boardwall">
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/setting_button"
+        android:id="@+id/settingPlayButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"/>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/toolsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_marginTop="40dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/winnerTextView"
+            android:textSize="25dp"
+            android:layout_below="@id/undoButton"
+            android:textAlignment="center"
+            android:fontFamily="@font/game_of_thrones"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:id="@+id/currentPlayerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/undoButton"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/game_of_thrones"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
+        <Button
+            android:id="@+id/undoButton"
+            android:layout_width="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"
+            android:background="@drawable/undo_button"
+            />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/lastMoveButton"
+            android:layout_width="50dp"
+            android:background="@drawable/hint_button"
+            android:layout_toRightOf="@id/undoButton"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

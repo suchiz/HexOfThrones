@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settingLayout"
+    tools:context=".SettingActivity">
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sound_highlight"
+        android:id="@+id/soundButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="55dp"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/info_button"
+        android:id="@+id/infoButton"
+        android:layout_toLeftOf="@+id/restartButton"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/restart_button"
+        android:id="@+id/restartButton"
+        android:layout_toLeftOf="@id/soundButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:textSize="25dp"
+        android:text="Play  turn  by  turn.\nCreate  a  continuous  chain  between  the  edges  of  the  same  color."
+        android:textAlignment="center"
+        android:fontFamily="@font/game_of_thrones"
+        android:id="@+id/rulesTV"
+        android:textColor="@color/yellow"/>
+</RelativeLayout>
